@@ -1,0 +1,16 @@
+Phase 1 
+March 19 , 2026 
+Home Lab Journal
+Setting up the Ubuntu virtual machine turned out to be one of the most frustrating 
+but educational experiences of this project so far. The first major issue was an architecture 
+mismatch — I kept downloading the amd64 version of Ubuntu when my UTM environment was running 
+ARM64 (aarch64), which caused QEMU to reject the ISO entirely and throw errors on boot. 
+After several failed attempts I finally found the correct noble-desktop-arm64.iso and got the 
+installer to launch.
+
+The second wave of problems came from storage. The virtual drive was initially too small at around
+6-7GB, which caused the Ubuntu installation to fail mid-process. On top of that my Mac itself was 
+running low on available storage, which meant I had to clean out old ISO files and free up space 
+before I could even resize the VM drive. After bumping the VirtIO drive to 64GB and clearing out 
+unnecessary files, the installation finally completed successfully and Ubuntu 24.04 booted cleanly
+for the first time.
