@@ -1,0 +1,11 @@
+Phase 1
+March 22, 2026
+Home Lab Journal
+Setting up Pi-hole on the Raspberry Pi Zero 2W turned out to be one of the most rewarding experiences of this project so far. The first step was flashing Raspberry Pi OS Lite 
+to the microSD card using Raspberry Pi Imager, where I configured WiFi, SSH, and my user account before writing the image. Once the Pi booted up I was able to SSH into it remotely
+from my Mac terminal at 192.168.1.154 without ever needing a keyboard or monitor connected to the Pi.
+
+The second part of the day involved installing Pi-hole with a single curl command that walked me through the setup automatically. I selected Cloudflare as my upstream DNS provider 
+for better privacy and security, and within minutes Pi-hole was fully installed and running. After pointing my Mac's DNS settings to 192.168.1.154, all of my network traffic began 
+routing through Pi-hole for filtering and monitoring. I also studied the OSI model and TCP/IP fundamentals today, learning how each layer of the model maps directly to tools I am 
+already using in my lab — Pi-hole at Layer 7, IP addresses at Layer 3, and MAC addresses at Layer 2.
